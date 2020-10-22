@@ -18,7 +18,7 @@ spec:
       containers:
         - name: go-hpa
           image: img-go-hpa-deployment
-          command: ["/bin/sh", "-c", "while true; do wget -q -O- http://go-hpa.default.svc.cluster.local; done;"]
+          #command: ["/bin/sh", "-c", "while true; do wget -q -O- http://go-hpa.default.svc.cluster.local; done;"]
           ports:
             - containerPort: 8000
               hostPort: 80

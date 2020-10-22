@@ -1,0 +1,10 @@
+steps:
+  - id: "Iniciando o Go"
+    name: 'gcr.io/cloud-builders/go'
+    args: ['install', 'go-hpa']
+    env: ['GOPATH=.']
+
+  - id: "Rodando o teste da aplicação"
+    name: 'gcr.io/cloud-builders/go'
+    args: ['test', 'go-hpa']
+    env: ['GOPATH=.']
